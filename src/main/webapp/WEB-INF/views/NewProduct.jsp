@@ -10,7 +10,7 @@
 	<h1>Products Add</h1>
 	
 	<form action="plogin" method="post">
-		ProductName : <input type="text" name="pname"><br><br>
+		ProductName : <input type="text" name="productName"><br><br>
 		Category : <input type="text" name="category"><br><br>
 		Price : <input type="text" name="price"><br><br>
 		Qty : <input type="text" name="qty"><br><br>

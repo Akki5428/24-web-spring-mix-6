@@ -1,22 +1,23 @@
 package com.bean;
 
 public class ProductBean {
-	private Integer pid;
-	private String pname;
+	private Integer productId;
+	private String productName;
 	private String category;
 	private Integer qty;
 	private Float price;
-	public Integer getPid() {
-		return pid;
+	
+	public Integer getProductId() {
+		return productId;
 	}
-	public void setPid(Integer pid) {
-		this.pid = pid;
+	public void setProductId(Integer productId) {
+		this.productId = productId;
 	}
-	public String getPname() {
-		return pname;
+	public String getProductName() {
+		return productName;
 	}
-	public void setPname(String pname) {
-		this.pname = pname;
+	public void setProductName(String productName) {
+		this.productName = productName;
 	}
 	public String getCategory() {
 		return category;
