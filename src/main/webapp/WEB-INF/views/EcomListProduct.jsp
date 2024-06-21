@@ -13,16 +13,17 @@
 	
 	<%List<ProductBean> products = (List<ProductBean>)request.getAttribute("list");%>
 	
-	<table>
+	<table border=2>
 		<tr>
 			<th>Product ID</th>
 			<th>Product Name</th>
+			<th>Action</th>
 		</tr>
 			<%
 				for(ProductBean p:products)
 				{
 					out.print("<tr>");
-					out.print("<td>"+p.getProductId()+"</td>"+"<td>"+p.getProductName()+"</td>");
+					out.print("<td>"+p.getProductId()+"</td>"+"<td>"+p.getProductName()+"</td>"+"<td><a href='deleteproduct?productId="+p.getProductId()+"'>Delete</a></td>");
 					out.print("</tr>");
 				}
 			%>	
