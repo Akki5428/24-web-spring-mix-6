@@ -26,4 +26,21 @@ public class EProductDao {
 		List<ProductBean> list = stmt.query("select * from products",new BeanPropertyRowMapper<ProductBean>(ProductBean.class));
 		return list;
 	}
+	
+	public void deleteProduct(Integer productId)
+	{
+		stmt.update("delete from products where productId = "+productId);
+	}
+	
+	public void deleteProduct(String productName)
+	{
+		stmt.update("delete from products where productName = "+"'"+productName+"'");
+		
+	}
+	
+	public ProductBean getProductById(Integer productId)
+	{
+		ProductBean bean= stmt.queryForObject("select * from products where productId = ?", new BeanPropertyRowMapper<ProductBean>(ProductBean.class) , new Object[] {productId});
+		return bean;
+	}
 }

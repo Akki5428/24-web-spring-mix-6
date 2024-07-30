@@ -9,11 +9,12 @@
 <body>
 	<h1>Products Add</h1>
 	
-	<form action="plogin" method="post">
+	<form action="plogin" method="post" enctype="multipart/form-data">
 		ProductName : <input type="text" name="productName"><br><br>
 		Category : <input type="text" name="category"><br><br>
 		Price : <input type="text" name="price"><br><br>
 		Qty : <input type="text" name="qty"><br><br>
+		Master Image : <input type="file" name="masterImage"><br><br>
 		<input type="submit" value="Submit">
 		
 	</form>

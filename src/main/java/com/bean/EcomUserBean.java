@@ -1,21 +1,39 @@
 package com.bean;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class EcomUserBean {
 	private int userId;
-	private String fname;
+	private String firstName;
 	private String email;
-	private String pwd;
+	private String password;
+	private MultipartFile profilepic;
+	private String masterpath;
+	
+	public MultipartFile getProfilepic() {
+		return profilepic;
+	}
+	public void setProfilepic(MultipartFile profilepic) {
+		this.profilepic = profilepic;
+	}
+	public String getMasterpath() {
+		return masterpath;
+	}
+	public void setMasterpath(String masterpath) {
+		this.masterpath = masterpath;
+	}
 	public int getUserId() {
 		return userId;
 	}
 	public void setUserId(int userId) {
 		this.userId = userId;
 	}
-	public String getFname() {
-		return fname;
+	
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFname(String fname) {
-		this.fname = fname;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
 	public String getEmail() {
 		return email;
@@ -23,12 +41,13 @@ public class EcomUserBean {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public String getPwd() {
-		return pwd;
+	public String getPassword() {
+		return password;
 	}
-	public void setPwd(String pwd) {
-		this.pwd = pwd;
+	public void setPassword(String password) {
+		this.password = password;
 	}
+	
 	
 	
 }

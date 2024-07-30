@@ -6,7 +6,28 @@ public class ProductBean {
 	private String category;
 	private Integer qty;
 	private Float price;
+	private String imagepath;
+	private Integer cartId;
+	private Integer cqty;
 	
+	public Integer getCqty() {
+		return cqty;
+	}
+	public void setCqty(Integer cqty) {
+		this.cqty = cqty;
+	}
+	public Integer getCartId() {
+		return cartId;
+	}
+	public void setCartId(Integer cartId) {
+		this.cartId = cartId;
+	}
+	public String getImagepath() {
+		return imagepath;
+	}
+	public void setImagepath(String imagepath) {
+		this.imagepath = imagepath;
+	}
 	public Integer getProductId() {
 		return productId;
 	}
